@@ -13,11 +13,11 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: Colore
-      delete_tag_button: Cancella Etichetta
-      delete_tag_confirmation: "Sei sicuro di voler cancellare questo etichetta? Le discussioni appartenenti a questa etichetta NON verranno cancellate."
-      description_label: Descrizione
-      hide_label: Nascondi da Tutte le discussioni
+      color_label: Color
+      delete_tag_button: Delete Tag
+      delete_tag_confirmation: "Are you sure you want to delete this tag? The tag's discussions will NOT be deleted."
+      description_label: Description
+      hide_label: Hide from All Discussions
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
       slug_label: Slug
@@ -31,64 +31,64 @@ flarum-tags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: Consenti la modifica delle etichette
-      restrict_by_tag_heading: Limita per etichetta
-      tag_discussions_label: Etichette delle discussioni
+      allow_edit_tags_label: Allow tag editing
+      restrict_by_tag_heading: Restrict by Tag
+      tag_discussions_label: Tag discussions
 
     # These translations are used in the Tag Settings modal dialog.
     tag_settings:
-      range_separator_text: " a "
-      required_primary_heading: Numero richiesto di etichette primarie
-      required_primary_text: Inserisci il numero minimo e massimo di etichette principali che possono essere applicate ad una discussione
-      required_secondary_heading: Numero richiesto di etichette secondarie
-      required_secondary_text: Inserisci il numero minimo e massimo di etichette secondarie che possono essere applicate ad una discussione
-      title: Impostazioni Etichetta
+      range_separator_text: " to "
+      required_primary_heading: Required Number of Primary Tags
+      required_primary_text: Enter the minimum and maximum number of primary tags that may be applied to a discussion.
+      required_secondary_heading: Required Number of Secondary Tags
+      required_secondary_text: Enter the minimum and maximum number of secondary tags that may be applied to a discussion.
+      title: Tag Settings
 
     # These translations are used in the Tags page.
     tags:
-      about_tags_text: "Le etichette vengono usate per categorizzare le discussioni. Le etichette primarie sono come le categorie tradizionali dei forum: possono essere disposte in una gerarchia a due livelli. Le etichette secondarie non hanno gerarchia o ordine, e sono utili per miccro-categorizzare."
+      about_tags_text: "Tags are used to categorize discussions. Primary tags are like traditional forum categories: they can be arranged in a two-level hierarchy. Secondary tags do not have hierarchy or order, and are useful for micro-categorization."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: Etichette Primarie
-      secondary_heading: Etichette Secondarie
-      settings_button: Impostazioni
+      primary_heading: Primary Tags
+      secondary_heading: Secondary Tags
+      settings_button: Settings
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Scegli una etichetta primaria|Scegli {count} etichette primarie"
-      choose_secondary_placeholder: "Scegli 1 etichetta in più|Scegli {count} etichette in più"
-      edit_title: "Modifica etichette per {title}"
+      choose_primary_placeholder: "Scegli una categoria|Scegli {count} categorie"
+      choose_secondary_placeholder: "Scegli un tag aggiuntivo|Scegli {count} tag aggiuntivi"
+      edit_title: "Modifica categorie/tag per {title}"
       submit_button: => core.ref.okay
-      title: Scegli le etichette per la tua discussione
+      title: Scegli la categoria
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: Scegli Etichette
+      choose_tags_link: Scegli categoria
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: Modifica Etichette
+      edit_tags_button: Modifica categoria
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      more_link: Di più...
+      more_link: Mostra altro
       tags_link: => flarum-tags.ref.tags
-      untagged_link: Senza etichetta
+      untagged_link: Senza tag
 
     # These translations are displayed between posts in the post stream.
     post_stream:
       added_tags_text: "{username} ha aggiunto {tagsAdded}."
       added_and_removed_tags_text: "{username} ha aggiunto {tagsAdded} e rimosso {tagsRemoved}."
       removed_tags_text: "{username} ha rimosso {tagsRemoved}."
-      tags_text: "{tags} etichetta|{tags} etichette"
+      tags_text: "Tag {tags}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # This translation is displayed in place of the name of a tag that's been deleted.
-    deleted_tag_text: Eliminata
+    deleted_tag_text: Tag eliminato
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Crea Etichetta
+    create_tag: Crea tag
     name: Nome
-    tags: Etichette
+    tags: Tag

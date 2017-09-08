@@ -33,9 +33,7 @@ moment.locale('it', {
         sameElse: 'L'
     },
     relativeTime : {
-        future : function (s) {
-            return ((/^[0-9].+$/).test(s) ? 'tra' : 'in') + ' ' + s;
-        },
+        future : 'tra',
         past : '%s fa',
         s : 'alcuni secondi',
         m : 'un minuto',

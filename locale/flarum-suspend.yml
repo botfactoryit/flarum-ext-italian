@@ -9,7 +9,7 @@ flarum-suspend:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      suspend_users_label: Sospendi utenti
+      suspend_users_label: Suspend users
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -17,7 +17,7 @@ flarum-suspend:
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
       indefinitely_label: Sospeso a tempo indeterminato
-      limited_time_label: Sospeso per un tempo limitato...
+      limited_time_label: Temporaneamente sospeso
       limited_time_days_text: " giorni"
       not_suspended_label: Non sospeso
       status_heading: Stato di sospensione

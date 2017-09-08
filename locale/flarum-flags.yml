@@ -9,28 +9,28 @@ flarum-flags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      flag_posts_label: Messaggi segnalati
-      view_flags_label: Vedi messaggi contrassegnati
+      flag_posts_label: Flag posts
+      view_flags_label: View flagged posts
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: URL Linea di Condotta
-      title: Impostazioni Segnalazioni
+      guidelines_url_label: Community Guidelines URL
+      title: Flags Settings
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Flag Post modal dialog.
     flag_post:
-      confirmation_message: Grazie per aver segnalato questo post. I nostri moderatori daranno un occhiata.
+      confirmation_message: Grazie per aver segnalato questo post. I nostri moderatori controlleranno la tua segnalazione al più presto.
       dismiss_button: => core.ref.okay
       reason_inappropriate_label: Non appropriato
-      reason_inappropriate_text: "Questo messaggio è offensivo, abusivo o viola la nostra <a>Linea di Condotta</a>."
+      reason_inappropriate_text: "Questo messaggio è offensivo o vìola le <a>regole</a>."
       reason_off_topic_label: "Off-topic"
       reason_off_topic_text: Questo messaggio non è rilevante per la discussione in corso e dovrebbe essere spostato altrove.
       reason_other_label: Altro
       reason_spam_label: Spam
-      reason_spam_text: Questo messaggio è un annuncio.
+      reason_spam_text: Questo messaggio è un annuncio pubblicitario.
       submit_button: => flarum-flags.ref.flag_post
       title: => flarum-flags.ref.flag_post
 
@@ -43,8 +43,8 @@ flarum-flags:
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_button: Elimina Segnalazione
-      flagged_by_text: "{username} segnalato"
+      dismiss_flag_button: Elimina segnalazione
+      flagged_by_text: "Segnalato da {username}"
       flagged_by_with_reason_text: "{username} è stato segnalato per {reason}"
 
     # These translations are used by the post control buttons.
@@ -57,5 +57,5 @@ flarum-flags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    flag_post: Segnala Messaggio
-    flagged_posts: Messaggi Segnalati
+    flag_post: Segnala messaggio
+    flagged_posts: Messaggi segnalati
