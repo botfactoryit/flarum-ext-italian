@@ -36,7 +36,7 @@ flarum-subscriptions:
       follow_button: Segui
       following_button: Seguito
       following_text: Ricevi una notifica per ogni nuova risposta.
-      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_button: Ignorato
       ignoring_text: Nessuna notifica. Rimuovi la discussione dalla lista.
       not_following_button: Normale
       not_following_text: "Ricevi una notifica quando vieni menzionato."
