@@ -472,6 +472,7 @@ core:
         {url}
 
         Se non ti sei iscritto, ignora questa email.
+        Non rispondere a questa email.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
@@ -484,6 +485,7 @@ core:
         {url}
 
         Se non sei stato tu a richiedere il cambio email, ignora questa email.
+        Non rispondere a questa email.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
@@ -494,6 +496,8 @@ core:
         Premi sul seguente link per impostare una nuova password.
         
         {url}
+        
+        Non rispondere a questa email.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
