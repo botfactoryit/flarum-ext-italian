@@ -9,7 +9,7 @@ flarum-sticky:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      sticky_discussions_label: Discussioni in evidenzia
+      sticky_discussions_label: Discussioni in evidenza
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -25,7 +25,7 @@ flarum-sticky:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_stickied_text: "{username} ha messo questa discussione in evidenzia."
+      discussion_stickied_text: "{username} ha messo questa discussione in evidenza."
       discussion_unstickied_text: "{username} ha rimosso lo stato \"in evidenza\"."
 
   ##
