@@ -327,7 +327,7 @@ core:
       now_link: Adesso
       original_post_link: Messaggio iniziale
       unread_text: "{count} non letti"
-      viewing_text: "Messaggio {index}/{count}"
+      viewing_text: "Messaggio {index} di {count}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
