@@ -5,6 +5,6 @@ flarum-best-answer:
     forum:
         this_best_answer: Miglior risposta
         remove_best_answer: Togli miglior risposta
-        header_best_answer: Risposta scelta come miglior risposta dal creatore della discussione
+        header_best_answer: Scelta come miglior risposta dal creatore della discussione
         best_answer_button: Miglior risposta
         best_answer: Miglior risposta
