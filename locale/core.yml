@@ -488,7 +488,7 @@ core:
         Ciao {username}!<br><br>
         Premi sul seguente link per impostare una nuova password.<br><br>
         {url}<br><br>
-        Non rispondere a questa email.<br>
+        Non rispondere a questa email.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
