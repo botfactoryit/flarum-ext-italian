@@ -465,39 +465,30 @@ core:
     activate_account:
       subject: Attiva il tuo account
       body: |
-        Ciao {username}!
-        
-        Premi sul seguente link per confermare la tua iscrizione al forum.
-        
-        {url}
-
-        Se non ti sei iscritto, ignora questa email.
+        Ciao {username}!<br><br>
+        Premi sul seguente link per confermare la tua iscrizione al forum.<br><br>
+        {url}<br><br>
+        Se non ti sei iscritto, ignora questa email.<br>
         Non rispondere a questa email.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
       subject: Conferma il nuovo indirizzo email
       body: |
-        Ciao {username}!
-        
-        Premi sul seguente link per confermare il tuo indirizzo email.
-        
-        {url}
-
-        Se non sei stato tu a richiedere il cambio email, ignora questa email.
+        Ciao {username}!<br><br>
+        Premi sul seguente link per confermare il tuo indirizzo email.<br><br>
+        {url}<br><br>
+        Se non sei stato tu a richiedere il cambio email, ignora questa email.<br>
         Non rispondere a questa email.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       subject: Recupero password
       body: |
-        Ciao {username}!
-        
-        Premi sul seguente link per impostare una nuova password.
-        
-        {url}
-        
-        Non rispondere a questa email.
+        Ciao {username}!<br><br>
+        Premi sul seguente link per impostare una nuova password.<br><br>
+        {url}<br><br>
+        Non rispondere a questa email.<br>
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
