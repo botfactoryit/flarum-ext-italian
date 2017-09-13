@@ -47,10 +47,10 @@ flarum-mentions:
         
         Link risposta: {url}
       body_html: |
-        Ciao {dest_username}!
-        {post_username} ti ha <a href="{url}">menzionato</a> nella discussione {post_title}.
+        Ciao {dest_username}!<br>
+        {post_username} ti ha <a href="{url}">menzionato</a> nella discussione {post_title}.<br><br>
         
-        --- {post_username} ha scritto ---
+        --- {post_username} ha scritto ---<br>
 
         {content}
     new_reply_notification:
@@ -64,9 +64,9 @@ flarum-mentions:
         
         Link discussione: {url}
       body_html: |
-        Ciao {dest_username}!
-        {post_username} ha risposto a un tuo messaggio nella discussione <a href="{url}">{post_title}</a>.
+        Ciao {dest_username}!<br>
+        {post_username} ha risposto a un tuo messaggio nella discussione <a href="{url}">{post_title}</a>.<br><br>
         
-        --- {post_username} ha scritto ---
+        --- {post_username} ha scritto ---<br>
 
         {content}

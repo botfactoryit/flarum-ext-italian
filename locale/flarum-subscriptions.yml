@@ -56,10 +56,10 @@ flarum-subscriptions:
         
         Link discussione: {url}
       body_html: |
-        Ciao {dest_username}!
-        {post_username} ha risposto alla discussione <a href="{url}">{post_title}</a>.
-        Ricorda che non riceverai altre notifiche finché non accedi per leggere le nuove risposte.
+        Ciao {dest_username}!<br>
+        {post_username} ha risposto alla discussione <a href="{url}">{post_title}</a>.<br>
+        Ricorda che non riceverai altre notifiche finché non accedi per leggere le nuove risposte.<br><br>
         
-        --- {post_username} ha scritto ---
+        --- {post_username} ha scritto ---<br>
 
         {content}
