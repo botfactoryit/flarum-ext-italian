@@ -464,30 +464,50 @@ core:
     # These translations are used in emails sent when users register new accounts.
     activate_account:
       subject: Attiva il tuo account
-      body: |
+      body_text: |
+        Ciao {username}!
+        Premi sul seguente link per confermare la tua iscrizione al forum.
+        
+        {url}
+        
+        Se non ti sei iscritto, ignora questa email.
+        Non rispondere a questa email.
+      body_html: |
         Ciao {username}!<br><br>
-        Premi sul seguente link per confermare la tua iscrizione al forum.<br><br>
-        {url}<br><br>
+        Premi <a href="{url}">questo link</a> per confermare la tua iscrizione al forum.<br><br>
         Se non ti sei iscritto, ignora questa email.<br>
         Non rispondere a questa email.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
       subject: Conferma il nuovo indirizzo email
-      body: |
+      body_text: |
+        Ciao {username}!
+        Premi sul seguente link per confermare il tuo indirizzo email.
+        
+        {url}
+        
+        Se non sei stato tu a richiedere il cambio email, ignora questa email.
+        Non rispondere a questa email.
+      body_html: |
         Ciao {username}!<br><br>
-        Premi sul seguente link per confermare il tuo indirizzo email.<br><br>
-        {url}<br><br>
+        Premi <a href="{url}">questo link</a> per confermare il tuo indirizzo email.<br><br>
         Se non sei stato tu a richiedere il cambio email, ignora questa email.<br>
         Non rispondere a questa email.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       subject: Recupero password
-      body: |
+      body_text: |
+        Ciao {username}!
+        Premi sul seguente link per impostare una nuova password.
+        
+        {url}
+        
+        Non rispondere a questa email.
+      body_html: |
         Ciao {username}!<br><br>
-        Premi sul seguente link per impostare una nuova password.<br><br>
-        {url}<br><br>
+        Premi <a href="{url}">questo link</a> per impostare una nuova password.<br><br>
         Non rispondere a questa email.
 
   ##

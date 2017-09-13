@@ -34,3 +34,39 @@ flarum-mentions:
     # These translations are used in the user profile page and profile popup.
     user:
       mentions_link: Menzioni
+    
+  email:
+    new_mention_notification:
+      body_text: |
+        Ciao {dest_username}!
+        {post_username} ti ha menzionato nella discussione {post_title}.
+        
+        --- {post_username} ha scritto ---
+
+        {content}
+        
+        Link risposta: {url}
+      body_html: |
+        Ciao {dest_username}!
+        {post_username} ti ha <a href="{url}">menzionato</a> nella discussione {post_title}.
+        
+        --- {post_username} ha scritto ---
+
+        {content}
+    new_reply_notification:
+      body_text: |
+        Ciao {dest_username}!
+        {post_username} ha risposto a un tuo messaggio nella discussione {post_title}.
+        
+        --- {post_username} ha scritto ---
+
+        {content}
+        
+        Link discussione: {url}
+      body_html: |
+        Ciao {dest_username}!
+        {post_username} ha risposto a un tuo messaggio nella discussione <a href="{url}">{post_title}</a>.
+        
+        --- {post_username} ha scritto ---
+
+        {content}

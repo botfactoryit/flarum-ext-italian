@@ -42,3 +42,24 @@ flarum-subscriptions:
       not_following_text: "Ricevi una notifica quando vieni menzionato."
       notify_alert_tooltip: Ricevi una notifica quando qualcuno risponde
       notify_email_tooltip: Ricevi un'email quando qualcuno risponde
+    
+  email:
+    new_post_notification:
+      body_text: |
+        Ciao {dest_username}!
+        {post_username} ha risposto alla discussione {post_title}.
+        Ricorda che non riceverai altre notifiche finché non accedi per leggere le nuove risposte.
+        
+        --- {post_username} ha scritto ---
+
+        {content}
+        
+        Link discussione: {url}
+      body_html: |
+        Ciao {dest_username}!
+        {post_username} ha risposto alla discussione <a href="{url}">{post_title}</a>.
+        Ricorda che non riceverai altre notifiche finché non accedi per leggere le nuove risposte.
+        
+        --- {post_username} ha scritto ---
+
+        {content}
