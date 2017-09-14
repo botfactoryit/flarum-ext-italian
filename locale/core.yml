@@ -520,7 +520,7 @@ core:
     change_email: Modifica email
     change_password: Modifica password
     confirm_password: Conferma password
-    confirmation_email_sent: "Abbiamo inviato un'email di conferma all'indirizzo {email}."
+    confirmation_email_sent: "Abbiamo inviato un'email di conferma all'indirizzo {email}. Se non la vedi, controlla in spam."
     delete: Elimina
     delete_forever: Elimina per sempre
     discussions: Discussioni
