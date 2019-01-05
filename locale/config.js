@@ -1,7 +1,4 @@
-//! moment.js locale configuration
-//! locale : Italian [it]
-//! author : Lorenzo : https://github.com/aliem
-//! author: Mattia Larentis: https://github.com/nostalgiaz
+// https://github.com/moment/moment/blob/develop/locale/it.js
 
 moment.locale('it', {
     months : 'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),
@@ -36,6 +33,7 @@ moment.locale('it', {
         future : 'tra',
         past : '%s fa',
         s : 'alcuni secondi',
+        ss : '%d secondi',
         m : 'un minuto',
         mm : '%d minuti',
         h : 'un\'ora',
@@ -47,7 +45,7 @@ moment.locale('it', {
         y : 'un anno',
         yy : '%d anni'
     },
-    ordinalParse : /\d{1,2}º/,
+    dayOfMonthOrdinalParse : /\d{1,2}º/,
     ordinal: '%dº',
     week : {
         dow : 1, // Monday is the first day of the week.

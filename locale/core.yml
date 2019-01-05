@@ -82,7 +82,7 @@ core:
     edit_header:
       customize_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
       submit_button: => core.ref.save_changes
-      title: Edit Custom Header
+      title: Edit custom header
 
     # These translations are used in the email page of the admin interface.
     email:
@@ -195,6 +195,7 @@ core:
       exit_full_screen_tooltip: Esci da schermo intero
       full_screen_tooltip: Schermo intero
       minimize_tooltip: Minimizza
+      preview_tooltip: Anteprima
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -223,7 +224,7 @@ core:
       cannot_reply_button: Non puoi rispondere
       cannot_reply_text: Non hai il permesso di rispondere a questa discussione.
       delete_button: => core.ref.delete
-      delete_confirmation: "Sei sicuro di voler cancellare la discussione?"
+      delete_confirmation: "Sei sicuro di voler cancellare questa discussione? Questa azione è irreversibile."
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: Accedi e rispondi
       rename_button: Modifica titolo
@@ -277,7 +278,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: => core.ref.start_a_discussion
-      mark_all_as_read_confirmation: "Sei sicuro di voler impostare tutte le discussioni come lette?"
+      mark_all_as_read_confirmation: "Sei sicuro di voler segnare tutte le discussioni come lette?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Ricarica
       start_discussion_button: => core.ref.start_a_discussion
@@ -293,21 +294,21 @@ core:
     # These translations are used in the Log In modal dialog.
     log_in:
       forgot_password_link: "Password dimenticata?"
-      invalid_login_message: I dati di accesso non sono corretti.
+      invalid_login_message: I dati inseriti non sono corretti.
       password_placeholder: => core.ref.password
       remember_me_label: Ricordami
       sign_up_text: "Non hai un account? <a>Registrati</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: Nome utente o email
+      username_or_email_placeholder: Nome utente o e-mail
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
       discussion_renamed_text: "{username} ha cambiato il titolo"
-      empty_text: Nessuna notifica
+      empty_text: Non ci sono notifiche
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      title: => core.ref.notifications
-      tooltip: => core.ref.notifications
+      title: Notifiche
+      tooltip: Notifiche
 
     # These translations are used by tooltips displayed for individual posts.
     post:
@@ -346,7 +347,7 @@ core:
     search:
       all_discussions_button: 'Cerca "{query}" tra tutte le discussioni'
       discussions_heading: => core.ref.discussions
-      users_heading: Utenti
+      users_heading: => core.ref.users
 
     # These translations are used in the Settings page.
     settings:
@@ -382,8 +383,9 @@ core:
       in_discussion_text: "Nella discussione {discussion}"
       joined_date_text: "Iscritto {ago}"
       online_text: Online
+      posts_empty_text: Non ci sono messaggi.
       posts_load_more_button: => core.ref.load_more
-      posts_link: Messaggi
+      posts_link: => core.ref.posts
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -406,16 +408,12 @@ core:
     badge:
       hidden_tooltip: Nascosto
 
-    # These translations are used to modify usernames.
-    username:
-      deleted_text: "[cancellato]"
-
     # These translations are displayed as error messages.
     error:
       generic_message: "Oops! Qualcosa è andato storto. Prova a ricaricare la pagina."
       not_found_message: La risorsa richiesta non è stata trovata.
       permission_denied_message: Non hai il permesso per svolgere questa azione.
-      rate_limit_exceeded_message: Stai andando un po' troppo in fretta... riprova tra qualche secondo
+      rate_limit_exceeded_message: Stai andando un po' troppo in fretta... riprova tra qualche secondo.
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -427,6 +425,10 @@ core:
       glue_text: ", "
       three_text: "{first}, {second} e {third}"
       two_text: "{first} e {second}"
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[cancellato]"
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
@@ -440,17 +442,32 @@ core:
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
       next_page_button: => core.ref.next_page
-      previous_page_button: Pagina precedente
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed when Flarum encounters an error.
+    error:
+      403_message: Non sei autorizzato ad accedere a questa pagina.
+      404_message: La pagina che hai richiesto non esiste.
+      404_return_link: "Ritorna su {forum}"
+      500_message: Si è verificato un errore durante il caricamento di questa pagina.
+      503_message: "{forum} è in manutenzione. Ritonerà operativo il prima possibile!"
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
       all_discussions_heading: => core.ref.all_discussions
       next_page_button: => core.ref.next_page
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed by the Log Out confirmation interface.
+    log_out:
+      log_out_button: => core.ref.log_out
+      log_out_confirmation: "Sei sicuro di voler eseguire il log out su {forum}?"
+      title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
     reset:
-      confirm_password_label: => core.ref.confirm_password
-      password_label: => core.ref.password
+      confirm_password_label: Conferma password
+      password_label: Password
       submit_button: Salva password
       title:  Imposta password
 
@@ -519,6 +536,7 @@ core:
     all_discussions: Tutte le discussioni
     change_email: Modifica email
     change_password: Modifica password
+    color: Colore
     confirm_password: Conferma password
     confirmation_email_sent: "Abbiamo inviato un'email di conferma all'indirizzo {email}. Se non la vedi, controlla in spam."
     delete: Elimina
@@ -531,10 +549,15 @@ core:
     log_out: Logout
     mark_all_as_read: Imposta tutto come letto
     next_page: Pagina successiva
-    notifications: Notifiche
+    notifications: Notificami se...
     okay: OK                                     # Referenced by flarum-tags.yml
     password: Password
+    posts: Messaggi                                 # Referenced by flarum-statistics.yml
+    previous_page: Pagina precedente
+    remove: Rimuovi
+    rename: Rinomina
     reply: Rispondi                                 # Referenced by flarum-mentions.yml
+    reset_your_password: Ripristina password
     restore: Ripristina
     save_changes: Salva modifiche                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Impostazioni
@@ -542,7 +565,8 @@ core:
     some_others: "{count} altro|altri {count}"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Inizia una discussione
     username: Nome utente
-    write_a_reply: Scrivi una risposta...
+    users: Utenti                                 # Referenced by flarum-statistics.yml
+    write_a_reply: Rispondi alla discussione...
     you: Tu                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
