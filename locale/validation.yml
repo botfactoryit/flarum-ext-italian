@@ -30,6 +30,16 @@ validation:
   exists: ":attribute selezionato non è valido."
   file: :attribute deve essere un file."
   filled: "Il campo :attribute è richiesto."
+  gt:
+    numeric: ":attribute deve essere maggiore di :value."
+    file: ":attribute deve essere maggiore di :value kilobyte."
+    string: ":attribute deve contenere più di :value caratteri."
+    array: ":attribute deve contenere più di :value elementi."
+  gte:
+    numeric: ":attribute deve essere maggiore o uguale a :value."
+    file: ":attribute deve essere maggiore o uguale a :value kilobyte."
+    string: ":attribute deve contenere almeno :value caratteri."
+    array: ":attribute deve contenere almeno :value elementi."
   image: ":attribute deve essere un'immagine."
   in: ":attribute selezionato non è valido."
   in_array: "Il valore del campo :attribute non esiste in :other."
@@ -38,6 +48,16 @@ validation:
   ipv4: ":attribute deve essere un indirizzo IPv4 valido."
   ipv6: ":attribute deve essere un indirizzo IPv6 valido."
   json: ":attribute deve essere una stringa JSON valida."
+  lt:
+    numeric: ":attribute deve essere minogre di :value."
+    file: ":attribute deve essere minogre di :value kilobyte."
+    string: ":attribute deve contenere meno di :value caratteri."
+    array: ":attribute deve contenere meno di :value elementi."
+  lte:
+    numeric: ":attribute deve essere minore o uguale a :value."
+    file: ":attribute deve essere minore o uguale a :value kilobyte."
+    string: ":attribute deve contenere al più :value caratteri."
+    array: ":attribute deve contenere al più :value elementi."
   max:
     numeric: ":attribute non può essere superiore a :max."
     file: ":attribute non può essere superiore a :max kilobytes."

@@ -19,13 +19,16 @@ core:
       colored_header_label: Colored Header
       colors_heading: Colors
       colors_text: "Choose two colors to theme your forum with. The first will be used as a highlight color, while the second will be used to style background elements."
+      custom_footer_heading: Custom Footer
+      custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: Custom Header
-      custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+      custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: Custom Styles
       custom_styles_text: Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's default styles.
       dark_mode_label: Dark Mode
       edit_css_button: Edit Custom CSS
-      edit_header_button: Edit Custom Header
+      edit_footer_button: => core.ref.custom_footer_title
+      edit_header_button: => core.ref.custom_header_title
       enter_hex_message: Please enter a hexadecimal color code.
       favicon_heading: Favicon
       favicon_text: Upload an image to be displayed as the forum's shortcut icon.
@@ -41,7 +44,7 @@ core:
       forum_description_text: Enter a short sentence or two that describes your community. This will appear in the meta tag and show up in search engines.
       forum_title_heading: Forum Title
       home_page_heading: Home Page
-      home_page_text: "Choose the page which users will first see when they visit your forum. If entering a custom value, use the path relative to the forum root."
+      home_page_text: Choose the page which users will first see when they visit your forum.
       saved_message: Your changes were saved.
       show_language_selector_label: Show language selector
       submit_button: => core.ref.save_changes
@@ -50,14 +53,8 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "This <strong>beta software</strong> is provided primarily so that you can help us test it and make it better; it should not be used in production."
-      contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
-      extension_text: "Interested in developing extensions? Read the <a>Extension docs</a>."
-      features_text: "Got an idea to improve a feature? Tell us about it under the <a>Features tag</a>."
-      support_text: "Found a bug? Please report it in our forum, under the <a>Support tag</a>."
-      troubleshooting_text: "Having problems? Follow the instructions in the <a>Troubleshooting docs</a>."
-      version_text: "Thanks for trying out Flarum! You are running version {version}."
-      welcome_text: "Welcome to Flarum Beta!"
+      clear_cache_button: Clear Cache
+      tools_button: Tools
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -65,13 +62,19 @@ core:
       submit_button: => core.ref.save_changes
       title: Edit Custom CSS
 
+    # These translations are used in the Edit Custom Footer modal dialog.
+    edit_footer:
+      customize_text: => core.ref.custom_footer_text
+      submit_button: => core.ref.save_changes
+      title: => core.ref.custom_footer_title
+
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: Color
+      color_label: => core.ref.color
       delete_button: Delete Group
       delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
       icon_label: Icon
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>without</em> the <code>fa-</code> prefix."
+      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
       name_label: Name
       plural_placeholder: Plural (e.g. Mods)
       singular_placeholder: Singular (e.g. Mod)
@@ -80,9 +83,9 @@ core:
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+      customize_text: => core.ref.custom_header_text
       submit_button: => core.ref.save_changes
-      title: Edit custom header
+      title: => core.ref.custom_header_title
 
     # These translations are used in the email page of the admin interface.
     email:
@@ -131,13 +134,14 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_renaming_label: Allow renaming
       allow_post_editing_label: Allow post editing
+      allow_renaming_label: Allow renaming
       create_heading: Create
       delete_discussions_forever_label: Delete discussions forever
       delete_discussions_label: Delete discussions
       delete_posts_forever_label: Delete posts forever
-      edit_and_delete_posts_label: Edit and delete posts
+      delete_posts_label: Delete posts
+      edit_posts_label: Edit posts
       global_heading: Global
       moderate_heading: Moderate
       new_group_button: New Group
@@ -148,6 +152,7 @@ core:
       sign_up_label: Sign up
       start_discussions_label: Start discussions
       view_discussions_label: View discussions
+      view_last_seen_at_label: View user last seen time
       view_post_ips_label: View post IP addresses
       view_user_list_label: View user list
 
@@ -168,7 +173,7 @@ core:
 
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: Remove
+      remove_button: => core.ref.remove
       upload_button: Choose an Image...
 
   # Translations in this namespace are used by the forum user interface.
@@ -378,7 +383,6 @@ core:
       avatar_remove_button: Rimuovi
       avatar_upload_button: Carica
       avatar_upload_tooltip: Carica un avatar
-      bio_placeholder: Scrivi qualcosa su di te
       discussions_link: => core.ref.discussions
       in_discussion_text: "Nella discussione {discussion}"
       joined_date_text: "Iscritto {ago}"
@@ -463,13 +467,13 @@ core:
       log_out_button: => core.ref.log_out
       log_out_confirmation: "Sei sicuro di voler eseguire il log out su {forum}?"
       title: => core.ref.log_out
-
+    
     # Translations in this namespace are displayed by the Reset Password interface.
-    reset:
-      confirm_password_label: Conferma password
-      password_label: Password
-      submit_button: Salva password
-      title:  Imposta password
+    reset_password:
+      confirm_password_label: Conferma nuova passwrd
+      new_password_label: Nuova password
+      submit_button: => core.ref.save_changes
+      title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in messages output by the API.
   api:
@@ -539,6 +543,10 @@ core:
     color: Colore
     confirm_password: Conferma password
     confirmation_email_sent: "Abbiamo inviato un'email di conferma all'indirizzo {email}. Se non la vedi, controlla in spam."
+    custom_footer_text: Add HTML to be displayed at the very bottom of the page.
+    custom_footer_title: Edit Custom Footer
+    custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+    custom_header_title: Edit Custom Header
     delete: Elimina
     delete_forever: Elimina per sempre
     discussions: Discussioni

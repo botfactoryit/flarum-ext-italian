@@ -1,5 +1,5 @@
 {
-    "name": "nearata/lang-italian",
+    "name": "botfactoryit/flarum-italian",
     "type": "flarum-extension",
     "description": "Italian language pack.",
     "keywords": ["locale"],
@@ -30,9 +30,6 @@
         "flarum-locale": {
             "code": "it",
             "title": "Italiano"
-        },
-        "flagrow": {
-            "discuss": "https://discuss.flarum.org/d/5160-italian-language-pack"
         }
     }
 }

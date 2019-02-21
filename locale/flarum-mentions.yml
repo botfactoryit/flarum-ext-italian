@@ -40,16 +40,16 @@ flarum-mentions:
     new_mention_notification:
       body_text: |
         Ciao {dest_username}!
-        {post_username} ti ha menzionato nella discussione {post_title}.
+        {post_username} ti ha menzionato nella discussione "{post_title}".
         
+        {url}
+
         --- {post_username} ha scritto ---
 
         {content}
-        
-        Link risposta: {url}
       body_html: |
         Ciao {dest_username}!<br>
-        {post_username} ti ha <a href="{url}">menzionato</a> nella discussione {post_title}.<br><br>
+        {post_username} ti ha <a href="{url}">menzionato</a> nella discussione <i>{post_title}</i>.<br><br>
         
         --- {post_username} ha scritto ---<br>
 
@@ -57,16 +57,16 @@ flarum-mentions:
     new_reply_notification:
       body_text: |
         Ciao {dest_username}!
-        {post_username} ha risposto a un tuo messaggio nella discussione {post_title}.
+        {post_username} ha risposto a un tuo messaggio nella discussione "{post_title}".
         
+        {url}
+
         --- {post_username} ha scritto ---
 
         {content}
-        
-        Link discussione: {url}
       body_html: |
         Ciao {dest_username}!<br>
-        {post_username} ha risposto a un tuo messaggio nella discussione <a href="{url}">{post_title}</a>.<br><br>
+        {post_username} ha risposto a un tuo messaggio nella discussione <a href="{url}"><i>{post_title}</i></a>.<br><br>
         
         --- {post_username} ha scritto ---<br>
 
