@@ -525,10 +525,12 @@ core:
         
         {url}
         
+        Se non sei stato tu a richiedere il ripristino della password, ignora questa email.
         Non rispondere a questa email.
       body_html: |
         Ciao {username}!<br><br>
         Premi <a href="{url}">questo link</a> per impostare una nuova password.<br><br>
+        Se non sei stato tu a richiedere il ripristino della password, ignora questa email.<br>
         Non rispondere a questa email.
 
   ##
