@@ -85,7 +85,7 @@ flarum-tags:
       added_tags_text: "{username} ha aggiunto {tagsAdded}."
       added_and_removed_tags_text: "{username} ha aggiunto {tagsAdded} e rimosso {tagsRemoved}."
       removed_tags_text: "{username} ha rimosso {tagsRemoved}."
-      tags_text: "Tag {tags}"
+      tags_text: "il tag {tags}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
