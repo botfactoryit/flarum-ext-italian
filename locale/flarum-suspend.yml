@@ -15,8 +15,8 @@ flarum-suspend:
   forum:
     # These translations are used in the suspension notifications
     notifications:
-      user_suspended_text: "{username} ti ha sospeso per {timeReadable}"
-      user_unsuspended_text: "{username} ti ha riabilitato"
+      user_suspended_text: "Il tuo utente è stato sospeso per {timeReadable}"
+      user_unsuspended_text: "Il tuo utente è stato riabilitato"
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
