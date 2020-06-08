@@ -340,8 +340,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "Sei sicuro/a di voler eliminare questo post permanentemente? Questa operazione non può essere annullata."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "Sei sicuro/a di voler eliminare questo post?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -412,7 +414,7 @@ core:
     user_controls:
       button: Admin
       delete_button: => core.ref.delete
-      delete_confirmation: "Sei sicuro di voler eliminare questo utente? Tutti i messaggi di questo utente verrano cancellati."
+      delete_confirmation: "Sei sicuro di voler eliminare questo utente? I messaggi di questo utente NON verrano cancellati."
       delete_error_message: "L'eliminazione dell'utente <i>{username} ({email})</i> è fallita"
       delete_success_message: "L'utente <i>{username} ({email})</i> è stato eliminato"
       edit_button: => core.ref.edit
