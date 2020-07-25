@@ -1,0 +1,44 @@
+fof-polls:
+  admin:
+    permissions:
+      moderate: Edit & remove polls
+      self_edit: Allow users to edit their own polls
+      start: Start a poll
+      vote: Vote on polls
+
+  forum:
+    days_remaining: Il sondaggio termina {time}.
+    no_permission: Non hai i permessi per votare
+    poll_ended: Questo sondaggio è terminato.
+    public_poll: Vedi votanti
+
+    composer_discussion:
+      add_poll: Sondaggio
+      edit_poll: => fof-polls.forum.moderation.edit
+
+    modal:
+      add_title: Crea un sondaggio
+      add_option_label: Aggiungi un'opzione
+      date_placeholder: Data chiusura sondaggio (opzionale)
+      edit_title: Modifica sondaggio
+      include_question: Devi scrivere una domanda
+      max: Puoi aggiungere al massimo 10 risposte
+      min: Devi aggiungere almeno 2 risposte
+      no_voters: Nessun voto
+      option_placeholder: Risposta
+      options_label: Risposte
+      public_poll_label: Consenti agli utenti di vedere chi ha votato
+      question_placeholder: Domanda
+      submit: Invia
+
+    moderation:
+      delete: Rimuovi sondaggio
+      delete_confirm: Sei sicuro di voler eliminare questo sondaggio?
+      edit: Modifica sondaggio
+
+    tooltip:
+      badge: Sondaggio
+      votes: "1 voto|{count} voti"
+
+    votes_modal:
+      title: Votanti
