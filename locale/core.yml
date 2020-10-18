@@ -460,7 +460,7 @@ core:
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
       javascript_disabled_message: Questo sito è ottimizzato per un browser moderno con JavaScript abilitato.
-      load_error_message: Qualcosa è andato storto durante il caricamento della pagina. Svuota la cache e il problema dovrebbe risolversi
+      load_error_message: Qualcosa è andato storto durante il caricamento della pagina. Ricarica la pagina e il problema dovrebbe risolversi
       loading_text: Caricamento...
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
