@@ -20,6 +20,6 @@ fof-nightmode:
                     day: => fof-nightmode.ref.light
                     night: => fof-nightmode.ref.dark
                 option_descriptions:
-                    auto: "Automatico: il tema verrà scelto automaticamente in base alle impostazioni del tuo browser o del tuo dispositivo. Ad esempio, se hai la modalità scura attiva su iOS, il forum userà la modalità notturna.""
+                    auto: "Automatico: il tema verrà scelto automaticamente in base alle impostazioni del tuo browser o del tuo dispositivo. Ad esempio, se hai la modalità scura attiva su iOS, il forum userà la modalità notturna."
                     day: "Modalità diurna: l'esperienza classica a cui sei abituato."
-                    night: "Modalità notturna: sei una persona un po' nottambula... O semplicemente ti piacciono i colori scuri :)
+                    night: "Modalità notturna: sei una persona un po' nottambula... O semplicemente ti piacciono i colori scuri :)"
