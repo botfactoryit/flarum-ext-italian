@@ -1,8 +1,8 @@
 fof-nightmode:
     ref:
         auto: Automatico (in base alle impostazioni del browser o del dispositivo)
-        light: Modalità notturna
-        dark: Modalità diurna
+        light: Modalità diurna
+        dark: Modalità notturna
 
     forum:
         day: => fof-nightmode.ref.light
