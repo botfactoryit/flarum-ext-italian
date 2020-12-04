@@ -9,18 +9,22 @@ flarum-subscriptions:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      following_tooltip: Seguito
-      ignoring_tooltip: Ignorato
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      follow_button: Segui
+      follow_button: => flarum-subscriptions.ref.follow
       unfollow_button: Smetti di seguire
       unignore_button: Smetti di ignorare
+    
+    # These translations are used on the page that displays all subscriptions.
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      following_link: Discussioni seguite
+      following_link: => flarum-subscriptions.ref.following
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
@@ -33,12 +37,22 @@ flarum-subscriptions:
 
     # These translations are used in the subscription menu displayed to the right of the post stream.
     sub_controls:
-      follow_button: Segui
-      following_button: Seguito
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
       following_text: Ricevi una notifica per ogni nuova risposta.
-      ignoring_button: Ignorato
+      ignoring_button: => flarum-subscriptions.ref.ignoring
       ignoring_text: Nessuna notifica. Rimuovi la discussione dalla lista.
       not_following_button: Normale
       not_following_text: "Ricevi una notifica quando vieni menzionato."
       notify_alert_tooltip: Ricevi una notifica quando qualcuno risponde
       notify_email_tooltip: Ricevi un'email quando qualcuno risponde
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    follow: Segui
+    following: Seguito
+    ignoring: Ignorato
