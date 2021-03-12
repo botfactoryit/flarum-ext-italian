@@ -17,4 +17,4 @@ jobs:
       - name: YAML Lint
         uses: ibiqlik/action-yamllint@v3.0.0
         with:
-          format: auto
+          format: colored
