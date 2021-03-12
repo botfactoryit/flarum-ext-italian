@@ -3,4 +3,5 @@ extends: default
 rules:
   line-length: disable
   document-start: disable
-  trailing-spaces: warning
+  trailing-spaces:
+    level: warning
