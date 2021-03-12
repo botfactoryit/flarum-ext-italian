@@ -522,14 +522,14 @@ core:
       log_out_button: => core.ref.log_out
       log_out_confirmation: "Sei sicuro di voler eseguire il log out su {forum}?"
       title: => core.ref.log_out
-    
+
     # Translations in this namespace are displayed by the Reset Password interface.
     reset_password:
       confirm_password_label: Conferma nuova passwrd
       new_password_label: Nuova password
       submit_button: => core.ref.save_changes
       title: => core.ref.reset_your_password
-    
+
     # These translations are used when testing mailing configuration
     send_test:
       subject: Flarum Email Test
@@ -552,9 +552,9 @@ core:
       body_text: |
         Ciao {username}!
         Premi sul seguente link per confermare la tua iscrizione al forum.
-        
+
         {url}
-        
+
         Se non ti sei iscritto, ignora questa email.
         Non rispondere a questa email.
       body_html: |
@@ -569,9 +569,9 @@ core:
       body_text: |
         Ciao {username}!
         Premi sul seguente link per confermare il tuo indirizzo email.
-        
+
         {url}
-        
+
         Se non sei stato tu a richiedere il cambio email, ignora questa email.
         Non rispondere a questa email.
       body_html: |
@@ -586,9 +586,9 @@ core:
       body_text: |
         Ciao {username}!
         Premi sul seguente link per impostare una nuova password.
-        
+
         {url}
-        
+
         Se non sei stato tu a richiedere il ripristino della password, ignora questa email.
         Non rispondere a questa email.
       body_html: |

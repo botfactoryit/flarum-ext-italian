@@ -17,7 +17,7 @@ flarum-subscriptions:
       follow_button: => flarum-subscriptions.ref.follow
       unfollow_button: Smetti di seguire
       unignore_button: Smetti di ignorare
-    
+
     # These translations are used on the page that displays all subscriptions.
     following:
       meta_title_text: => flarum-subscriptions.ref.following
