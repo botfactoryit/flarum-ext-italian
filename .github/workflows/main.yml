@@ -18,3 +18,4 @@ jobs:
         uses: ibiqlik/action-yamllint@v3.0.0
         with:
           format: colored
+          file_or_dir: locale/**/.yml locale/**/.yaml
