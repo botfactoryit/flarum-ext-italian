@@ -4,6 +4,15 @@ fof-nightmode:
         light: Modalità diurna
         dark: Modalità notturna
 
+    admin:
+        settings:
+            modal:
+                default_theme: Default forum theme
+                default_theme_helper: The default theme is automatically set for new users, guests and those who have no preference set.
+                theme_auto: => fof-nightmode.ref.auto
+                theme_light: => fof-nightmode.ref.light
+                theme_dark: => fof-nightmode.ref.dark
+
     forum:
         day: => fof-nightmode.ref.light
         night: => fof-nightmode.ref.dark

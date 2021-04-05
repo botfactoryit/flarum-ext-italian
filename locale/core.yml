@@ -28,7 +28,6 @@ core:
       favicon_text: Upload an image to be displayed as the forum's shortcut icon.
       logo_heading: Logo
       logo_text: Upload an image to be displayed in place of the forum title.
-      submit_button: => core.ref.save_changes
       title: Appearance
 
     # These translations are used in the Basics page.
@@ -43,11 +42,9 @@ core:
       forum_title_heading: Forum Title
       home_page_heading: Home Page
       home_page_text: Choose the page which users will first see when they visit your forum.
-      saved_message: Your changes were saved.
       show_language_selector_label: Show language selector
       slug_driver_heading: "Slug Driver: {model}"
       slug_driver_text: Select a driver to be used for slugging this model.
-      submit_button: => core.ref.save_changes
       title: Basics
       welcome_banner_heading: Welcome Banner
       welcome_banner_text: Configure the text that displays in the banner on the All Discussions page. Use this to welcome guests to your forum.
@@ -113,15 +110,15 @@ core:
       send_test_mail_success: "Test mail sent successfully!"
       send_test_mail_text: "This will send an email using the above configuration to your email, {email}."
       smtp_heading: SMTP Settings
-      submit_button: => core.ref.save_changes
       title: => core.ref.email
 
     # These translations are used on default extension pages.
     extension:
-      confirm_uninstall: Uninstalling will remove all database entires and assets related to the extension. Are you sure you want to contiune?
+      configure_scopes: Configure Scopes
+      confirm_uninstall: Uninstalling will remove all database entries and assets related to the extension. Are you sure you want to continue?
       disabled: Disabled
-      enabled: Enabled
       enable_to_see: Enable the extension to view and change settings.
+      enabled: Enabled
       info_links:
         discuss: Discuss
         documentation: Documentation
@@ -133,7 +130,6 @@ core:
       no_settings: This extension has no settings.
       open_modal: Open Settings
       permissions_title: Permissions
-      saved_message: Your changes were saved.
       uninstall_button: Uninstall
 
     # These translations are used in the secondary header.
@@ -180,7 +176,9 @@ core:
       delete_posts_label: Delete posts
       description: Configure who can see and do what.
       edit_posts_label: Edit posts
-      edit_users_label: Edit users
+      edit_users_label: Edit user attributes
+      edit_users_credentials_label: Edit user credentials
+      edit_users_groups_label: Edit user groups
       global_heading: Global
       moderate_heading: Moderate
       new_group_button: New Group
@@ -209,8 +207,9 @@ core:
       signup_closed_button: Closed
       signup_open_button: Open
 
-    # These translations are used in the Settings modal dialog.
+    # These translations are used generically in setting fields.
     settings:
+      saved_message: Your changes were saved.
       submit_button: => core.ref.save_changes
 
     # These translations are used in image upload buttons.
@@ -330,7 +329,6 @@ core:
       mark_all_as_read_confirmation: "Sei sicuro di voler segnare tutte le discussioni come lette?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       meta_title_text: => core.ref.all_discussions
-      mark_as_read_tooltip: Segna come letto
       refresh_tooltip: Ricarica
       start_discussion_button: => core.ref.start_a_discussion
 
@@ -358,6 +356,7 @@ core:
       discussion_renamed_text: "{username} ha cambiato il titolo"
       empty_text: Non ci sono notifiche
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: Segna come letta
       title: Notifiche
       tooltip: Notifiche
 
@@ -417,8 +416,8 @@ core:
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
-      email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
       log_in_text: "Hai già un account? <a>Accedi</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
@@ -436,8 +435,8 @@ core:
       joined_date_text: "Iscritto {ago}"
       online_text: Online
       posts_empty_text: Non ci sono messaggi.
-      posts_load_more_button: => core.ref.load_more
       posts_link: => core.ref.posts
+      posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -529,15 +528,6 @@ core:
       new_password_label: Nuova password
       submit_button: => core.ref.save_changes
       title: => core.ref.reset_your_password
-
-    # These translations are used when testing mailing configuration
-    send_test:
-      subject: Flarum Email Test
-      body: |
-        Hey {username}!
-        This is a test email to confirm that your Flarum email configuration is working properly.
-        If this was you, this email means that your configuration works!
-        If this was not you, please ignore this email.
 
   # Translations in this namespace are used in messages output by the API.
   api:
